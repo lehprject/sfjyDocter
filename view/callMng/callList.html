@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link href="../../css/iconfont.css" rel="stylesheet"/>
+    <link href="../../css/style.css" rel="stylesheet"/>   
+</head>
+<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">出诊列表</h1>
+			<span class="mui-badge mui-badge-primary mui-pull-right margin-top10 padding-8" id="callList_add">新增</span>
+		</header>
+		<div class="mui-content margin-top12 call-list">
+		 	<div class="mui-card">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<div>
+							<span><i class="mui-icon iconfont icon-rili color-orange"></i>日期<em>2015-09-05</em></span>
+							<span><i class="mui-icon iconfont icon-shizhong color-orange"></i>时间<em>09:00-12:00</em></span>
+							<span><i class="mui-icon iconfont icon-yuyin color-yellow"></i>语音<em>11</em></span>
+							<span><i class="mui-icon iconfont icon-editorder color-qing"></i>续方<em>1</em></span>
+						</div>	
+					</li>
+				</ul>
+				<div class="moredel-info">
+					<span class="callDetail_btn" id="001"><i class="mui-icon iconfont icon-warnlg"></i>详细</span>
+					<span><i class="mui-icon iconfont icon-cut"></i>删除</span>
+				</div>	
+			</div>
+			<div class="mui-card">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<div>
+							<span><i class="mui-icon iconfont icon-rili color-orange"></i>日期<em>2015-09-05</em></span>
+							<span><i class="mui-icon iconfont icon-shizhong color-orange"></i>时间<em>09:00-12:00</em></span>
+							<span><i class="mui-icon iconfont icon-yuyin color-yellow"></i>语音<em>11</em></span>
+							<span><i class="mui-icon iconfont icon-editorder color-qing"></i>续方<em>1</em></span>
+						</div>	
+					</li>
+				</ul>
+				<div class="moredel-info">
+					<span  class="callDetail_btn"  id="002"><i class="mui-icon iconfont icon-warnlg"></i>详细</span>
+					<span><i class="mui-icon iconfont icon-cut"></i>删除</span>
+				</div>	
+			</div>
+			<div class="mui-card">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<div>
+							<span><i class="mui-icon iconfont icon-rili color-orange"></i>日期<em>2015-09-05</em></span>
+							<span><i class="mui-icon iconfont icon-shizhong color-orange"></i>时间<em>09:00-12:00</em></span>
+							<span><i class="mui-icon iconfont icon-yuyin color-yellow"></i>语音<em>11</em></span>
+							<span><i class="mui-icon iconfont icon-editorder color-qing"></i>续方<em>1</em></span>
+						</div>	
+					</li>
+				</ul>
+				<div class="moredel-info">
+					<span  class="callDetail_btn"  id="003"><i class="mui-icon iconfont icon-warnlg"></i>详细</span>
+					<span><i class="mui-icon iconfont icon-cut"></i>删除</span>
+				</div>	
+			</div>
+			<div class="mui-card">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<div>
+							<span><i class="mui-icon iconfont icon-rili color-orange"></i>日期<em>2015-09-05</em></span>
+							<span><i class="mui-icon iconfont icon-shizhong color-orange"></i>时间<em>09:00-12:00</em></span>
+							<span><i class="mui-icon iconfont icon-yuyin color-yellow"></i>语音<em>11</em></span>
+							<span><i class="mui-icon iconfont icon-editorder color-qing"></i>续方<em>1</em></span>
+						</div>	
+					</li>
+				</ul>
+				<div class="moredel-info">
+					<span class="callDetail_btn"><i class="mui-icon iconfont icon-warnlg"></i>详细</span>
+					<span><i class="mui-icon iconfont icon-cut"></i>删除</span>
+				</div>	
+			</div>
+		</div>
+	<script src="../../js/mui.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init({
+      		 preloadPages:[{
+			    id:'callDetail.html',
+			    url:'callDetail.html'           
+			  }
+			]
+      	});
+      	mui.plusReady(function(){
+      		document.getElementById("callList_add").addEventListener("tap",function(){
+      			mui.openWindow({
+      				url:'callMng.html',
+      				id:'callMng'
+      			});
+      		});
+
+      		var detailPage = null;
+			//添加列表项的点击事件
+			mui('.mui-content').on('tap', '.callDetail_btn', function(e) {
+			  var id = this.getAttribute('id');
+			  //console.log(id);
+			  //获得详情页面
+			  if(!detailPage){
+			    detailPage = plus.webview.getWebviewById('callDetail.html');
+			  }
+			  //触发详情页面的newsId事件
+			  mui.fire(detailPage,'newsId',{
+			    id:id
+			  });
+			//打开详情页面          
+			  mui.openWindow({
+			    id:'callDetail.html'
+			  });
+			});	
+      	});
+    </script>
+</body>
+</html>

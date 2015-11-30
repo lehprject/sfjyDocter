@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link href="../../css/iconfont.css" rel="stylesheet"/>
+    <link href="../../css/style.css" rel="stylesheet"/>
+    <style>
+			.mui-control-content {
+				background-color: white;
+				min-height: 315px;
+			}
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+		</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">患者信息</h1>
+		</header>
+		<div class="mui-content margin-top0">
+			 <div class="mui-row bg-white padding-8 border-bottom margin-bottom12">
+		        <div class="mui-col-xs-4" align="center">
+					<img class="border-radius" style="height: 100px; max-width: 100px; line-height: 100px;" src="http://img.4000121777.com/upload/images/supplier/533/20151104180753318.jpg" />
+					<div><span class="mui-badge mui-badge-primary padding-8" >病例详情</span></div>
+		        </div>
+		        <div class="mui-col-xs-8">
+		        	<p><span><i class="mui-icon iconfont icon-studyuser color-blue"></i><i class="size-16 ">小东</i><em>&nbsp;&nbsp;男 44岁</em></span></p>
+		        	<p><span><i class="mui-icon iconfont icon-doctor color-yellow"></i>乙肝</span></p>
+		        	<p><span><i class="mui-icon iconfont icon-location color-qing"></i>广东云浮</span></p>
+		        </div>
+		    </div>
+		    
+
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted patient-tab-title">
+					<a class="mui-control-item" href="#item1mobile">检查单信息</a>
+					<a class="mui-control-item" href="#item2mobile">诊断单信息</a>
+					<a class="mui-control-item" href="#item3mobile">用药信息</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active  patient-tabc-info">
+						<div class="padding-8 margin-bottom12" style="background-color: #efeff4;">
+							<div class="mui-row">
+								<div class="mui-col-xs-8">肝功能检查</div>
+	        					<div class="mui-col-xs-4 text-right">趋势图</div>
+							</div>
+						</div>
+						<div class="mui-card">
+							<div class="padding-8">
+								<div class="mui-row  padding-8">
+									<div class="mui-col-xs-6">标本类型：<em>血液</em></div>
+		        					<div class="mui-col-xs-6">送检医师：<em>刘xx</em></div>
+								</div>
+								<div class="mui-row  padding-8">
+									<div class="mui-col-xs-6">送检日期：<em>2015-05-12</em></div>
+		        					<div class="mui-col-xs-6">报告日期：<em>2015-05-12</em></div>
+								</div>
+								<div class="mui-row  padding-8">
+									<div class="mui-col-xs-12">送检目的：<em>阿达地方阿斯蒂芬</em></div>
+								</div>
+							</div>
+							<div class="table-td-center">
+								<div class="mui-row" style="background: #CCCCCC;">
+									<div class="mui-col-xs-3">项目</div>
+		        					<div class="mui-col-xs-3">结果</div>
+		        					<div class="mui-col-xs-3">参考值</div>
+		        					<div class="mui-col-xs-3">数量</div>
+								</div>
+								<div class="mui-row">
+									<div class="mui-col-xs-3">谷丙转氨酶</div>
+		        					<div class="mui-col-xs-3">16</div>
+		        					<div class="mui-col-xs-3">0-40</div>
+		        					<div class="mui-col-xs-3">U/L</div>
+								</div>
+								<div class="mui-row">
+									<div class="mui-col-xs-3">谷丙转氨酶</div>
+		        					<div class="mui-col-xs-3">16</div>
+		        					<div class="mui-col-xs-3">0-40</div>
+		        					<div class="mui-col-xs-3">U/L</div>
+								</div>
+								<div class="mui-row">
+									<div class="mui-col-xs-3">谷丙转氨酶</div>
+		        					<div class="mui-col-xs-3">16</div>
+		        					<div class="mui-col-xs-3">0-40</div>
+		        					<div class="mui-col-xs-3">U/L</div>
+								</div>
+								<div class="mui-row">
+									<div class="mui-col-xs-3">谷丙转氨酶</div>
+		        					<div class="mui-col-xs-3">16</div>
+		        					<div class="mui-col-xs-3">0-40</div>
+		        					<div class="mui-col-xs-3">U/L</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll3" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+ 
+	 
+		</div>
+		
+	<script src="../../js/mui.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	(function($) {
+				/*$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});*/
+				var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+				var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+				var item2 = document.getElementById('item2mobile');
+				var item3 = document.getElementById('item3mobile');
+				document.getElementById('slider').addEventListener('slide', function(e) {
+					if (e.detail.slideNumber === 1) {
+						if (item2.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item2.querySelector('.mui-scroll').innerHTML = html2;
+							}, 500);
+						}
+					} else if (e.detail.slideNumber === 2) {
+						if (item3.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item3.querySelector('.mui-scroll').innerHTML = html3;
+							}, 500);
+						}
+					}
+				});
+			})(mui);
+		
+		//
+		mui.plusReady(function(){
+      		//添加newId自定义事件监听
+			window.addEventListener('patientinfoId',function(event){
+			  //获得事件参数
+			  var id = event.detail.id;
+			  //根据id向服务器请求新闻详情
+			  console.log(id);
+			});
+      	})
+    </script>
+</body>
+</html>

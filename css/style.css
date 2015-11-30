@@ -1,0 +1,123 @@
+/**common*/
+.mui-bar{background-color: #1faa2b; }
+.mui-bar-bottom{background-color: #ffffff;  height: 74px;}
+.mui-title{color: #fff;}
+.mui-content{ margin-top: 12px;}
+.itab-box{background-color: #fff; overflow: hidden; margin-bottom: 12px; padding-bottom: 12px;}
+.itab-box .itab-box-title{ padding: 10px 20%; border-width: 1px 0; border-style: solid; border-color: #ddd; margin-bottom: 12px;}
+i,em{ font-style: normal;}
+.clear{ clear: both;}
+.margin-right10{ margin-right: 12px;}
+.margin-right12{ margin-right: 12px;}
+.margin-top10{ margin-top: 10px;}
+.margin-top0{ margin-top: 0px;}
+.margin-top12{ margin-top: 12px;}
+.margin-bottom12{ margin-bottom: 12px;}
+.margin-bottom4{ margin-bottom: 4px;}
+.padding-8{padding:8px;}
+.padding-12{ padding: 12px;}
+.size-12{font-size: 12px;}
+.size-14{font-size: 14px;}
+.size-16{font-size: 16px;}
+.color-blue{ color: #007aff;}
+.color-yellow{ color: #f0ad4e;}
+.color-orange{color: #f9975c}
+.color-qing{color: #49d9b2}
+.bg-white{background-color: #fff;}
+a.mui-action-back{color: #fff;}
+.text-right{text-align: right;}
+.iconfont{ font-size: 24px; margin-right: 3px;}
+.text-left{ text-align: left;}
+.text-right{ text-align: right;}
+.mui-segmented-control .mui-control-item.mui-active {
+color: #fff;
+background-color: #1faa2b;
+}
+.mui-segmented-control {
+border: 1px solid #1faa2b;
+border-radius: 3px;
+}
+/******中心***/
+.call-notice{ color: #f77a66; height: 40px; line-height: 40px; background-color: #FFFFFF; margin-bottom: 14px;;}
+.mui-segmented-control .mui-control-item {
+color: #666;
+border-color: #1faa2b;
+border-left: 1px solid #1faa2b;
+}
+.index-tab .mui-card{ margin-bottom: 12px;}
+.exreport{padding: 9px;}
+.call-sprite{background-image: url('../img/consult_iicon.png'); height: 42px; width: 42px;display: inline-block;-webkit-font-smoothing: antialiased;
+}
+.call-sprite-1{ background-position: 0 0px;}
+.call-sprite-2{ background-position: 0 -43px;}
+.call-sprite-3{ background-position: 0 -86px;}
+.call-sprite-4{ background-position: 0 -130px;}
+.call-sprite-5{ background-position: 0 -174px;}
+.call-sprite-6{ background-position: 0 bottom;}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+border-right: none;
+border-bottom: none;
+}
+.nav-icon{background-image: url('../img/nav_icon.png'); height: 38px; width: 38px;display: inline-block;-webkit-font-smoothing: antialiased;}
+.nav-icon-1{ background-position: 0 0;}
+.nav-icon-2{ background-position: 0 -47px; width: 44px; height: 44px;}
+.nav-icon-3{ background-position: 0 -96px;}
+.nav-icon-4{ background-position: 0 -140px;}
+.mui-bar-tab .mui-tab-item.mui-active {color: #1faa2b;}
+.mui-bar-tab .mui-tab-item.mui-active .nav-icon-1{ background-position: right 0;}
+.mui-bar-tab .mui-tab-item.mui-active .nav-icon-2{ background-position: right -47px;}
+.mui-bar-tab .mui-tab-item.mui-active .nav-icon-3{ background-position: right -96px;}
+.mui-bar-tab .mui-tab-item.mui-active .nav-icon-4{ background-position: right -140px;}
+.border-box{ padding-bottom: 5px; border-bottom: 1px solid #DDDDDD; overflow: hidden; margin-bottom: 4px;}
+
+#item2 .mui-navigate-right:after{top: 65%;}
+.my-badge{ background: transparent; border: 1px solid #1FAA2B; color:#1FAA2B ; margin-left: 4px;}
+
+/*****患者*****/
+.img-obj{
+	line-height: 80px;
+    max-width: 80px;
+    height: 80px;
+}
+.patient-tab-title{ background: #FFFFFF; border-width: 1px 0; border-style: solid;border-color: #DDDDDD;}
+.patient-tabc-info .mui-row{ padding: 4px 0;}
+.patient-tabc-info .mui-row em{ color: #666;}
+.table-td-center{ text-align: center; padding: 10px 0;}
+.table-td-center .mui-row{ border: 1px solid #eee; margin-top: -1px;}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+border-top: none;
+}
+/*出诊详细*/
+.call-detail .mui-table-view .mui-media-body p span:last-child {
+    position: absolute;
+    right: 10px;
+}
+.call-detail li{ margin-bottom: 12px; background: #fff;}
+.border-bottom{1px solid #ccc;}
+.call-detail .mui-table-view {
+background-color: transparent;
+}
+.call-detail li p{ height: 40px; line-height: 40px;}
+.mui-table-view .mui-media-object {
+line-height: 80px;
+max-width: 80px;
+height: 80px;
+}
+.border-radius{ border-radius: 50%;}
+.call-detail .mui-icon{ font-size: 28px; margin-right: 4px;}
+.call-detail .mui-badge{ padding: 8px;}
+.call-detail .mui-table-view-cell {
+padding: 11px 0px 11px 15px;
+}
+/*出诊管理*/
+.call-mng input[type=text]{
+border: 1px solid rgba(0,0,0,.2);
+}
+.call-mng label{ margin-right: 3px;}
+/*出诊列表*/
+.call-list li span{ float: left; width: 50%; margin: 3px 0;}
+.call-list li span em{ padding-left: 4px;}
+.call-list .moredel-info{ border-top: 1px solid #ccc; margin-top: 14px; overflow: hidden; clear: both; text-align: right; padding: 8px; color: #999;}
+.call-list .moredel-info span{ margin-left: 6px;}
+.call-list .mui-card{ margin-bottom: 12px;}
+.call-mng .call-title{ height: 40px; margin-top: 12px; overflow: hidden; color: #999;}

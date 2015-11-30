@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>   
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link href="../../css/iconfont.css" rel="stylesheet"/>
+    <link href="../../css/style.css" rel="stylesheet"/>  
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">出诊管理</h1>
+			<span class="mui-badge mui-badge-primary mui-pull-right margin-top10 padding-8" id="callMng_add">添加</span>
+		</header>
+		<div class="mui-content margin-top12 call-mng">
+		 	<div>设置时间</div>
+		 	<div class="bg-white" style="overflow: hidden; padding: 10px;">
+		 		<div class="mui-pull-left" style="width: 50%;">
+					<label><span class="mui-icon iconfont icon-rili color-orange"></span>日期</label>
+					<input type="date" class="mui-input-clear mui-input" placeholder="" data-input-clear="1" style="width: 60%;">
+				</div>
+				<div class="mui-pull-left" style="width: 50%;">
+					<label><span class="mui-icon  iconfont  icon-shizhong color-orange"></span>时间</label>
+					<input type="text" class="mui-input-clear mui-input" placeholder="" data-input-clear="1" style="width: 60%;">
+				</div>
+		 	</div>
+		 	<div class="call-title">
+		 		<div class="mui-pull-left">在线问诊</div>
+		 		<div id="online_call"  class="mui-switch mui-active mui-pull-right">
+                    <div class="mui-switch-handle"></div>
+                </div>
+		        <div class="clear">            	
+		    </div>
+		 	</div>
+		 	<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed onlinecall-ul">
+		        <li class="mui-table-view-cell">
+		            <div class="mui-table">
+							<label><span class="mui-icon  iconfont icon-yuyin color-yellow"></span>文字语音</label>
+							<input type="text" class="mui-input-clear mui-input"  placeholder="费用" data-input-clear="1"  style="width: 35%;">
+							<input type="text" class="mui-input-clear mui-input"  placeholder="时间" data-input-clear="1"  style="width: 35%;">
+		            </div>
+		        </li>
+		        <li class="mui-table-view-cell">
+		            <div class="mui-table">
+							<label><span class="mui-icon  iconfont icon-kefu color-qing"></span>网络电话</label>
+							<input type="text" class="mui-input-clear mui-input"  placeholder="费用" data-input-clear="1"  style="width: 35%;">
+							<input type="text" class="mui-input-clear mui-input"  placeholder="时间" data-input-clear="1"  style="width: 35%;">
+		            </div>
+		        </li>
+		        <li class="mui-table-view-cell">
+		            <div class="mui-table">
+							<label><span class="mui-icon  iconfont icon-users color-blue"></span>当次允许人数</label>
+							<input type="number" class="mui-input-clear mui-input"  placeholder="人数" data-input-clear="1"  style="width: 35%;">
+		            </div>
+		        </li>
+		    </ul>
+		 	
+		 	<div class="call-title">
+		 		<div class="mui-pull-left">用药建议</div>
+		 		<div id="med_advisor" class="mui-switch mui-active mui-pull-right">
+                    <div class="mui-switch-handle "></div>
+                </div>
+		        <div class="clear">            	
+		    </div>
+		 	</div>
+		 	<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+				<li class="mui-table-view-cell">
+		            <div class="mui-table">
+							<label><span class="mui-icon  iconfont icon-money color-orange"></span>单次费用</label>
+							<input type="number" class="mui-input-clear mui-input"  placeholder="费用" data-input-clear="1"  style="width: 35%;">
+		            </div>
+		        </li>
+		        <li class="mui-table-view-cell">
+		            <div class="mui-table">
+							<label><span class="mui-icon  iconfont icon-users color-blue"></span>当次允许人数</label>
+							<input type="number" class="mui-input-clear mui-input"  placeholder="人数" data-input-clear="1"  style="width: 35%;">
+		            </div>
+		        </li>
+		    </ul>
+		 	<div class="padding-8">
+		 		<p><span class="mui-badge">注意</span></p>
+		 		<p>但我们认为程序员彼此的交流分享非常重要，并希望开发者能更踊跃的共享自己的案例和开发经验。</p>
+		 		<p>欢迎大家在自己的博客撰写案例和开发经验，然后把链接微博 @数字天堂网络 。</p>
+		 		<p>我们将汇总收集在这里，同时给予该开发者1000分的奖励</p>
+		 	</div>
+		</div>
+		
+		<script src="../../js/mui.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	mui.plusReady(function(){
+      		document.getElementById("callMng_add").addEventListener("tap",function(){
+      			mui.openWindow({
+      				url:'callList.html',
+      				id:'callList'
+      			});
+      		});
+      		/*document.getElementById('online_call').addEventListener("toggle",function(event){
+  				if((event.detail.isActive ? 'true' : 'false')){
+  					onlineCallAble(true);
+  					
+  				}else{
+  					onlineCallAble(false);
+  				}
+  			});*/
+  			 
+  			
+      	});
+      	
+      	/*function onlineCallAble(b){
+      		for(var i=0;i<document.querySelectorAll(".onlinecall-ul input").length;i++){
+				document.querySelectorAll(".onlinecall-ul input")[i].disabled=b;
+			}
+      	}*/
+    </script>
+</body>
+</html>

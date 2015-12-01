@@ -14,21 +14,27 @@ i,em{ font-style: normal;}
 .margin-top12{ margin-top: 12px;}
 .margin-bottom12{ margin-bottom: 12px;}
 .margin-bottom4{ margin-bottom: 4px;}
+.margin-15{ margin: 0 15px;}
 .padding-8{padding:8px;}
+.paddingTB-8{padding:8px 0;}
 .padding-12{ padding: 12px;}
 .size-12{font-size: 12px;}
 .size-14{font-size: 14px;}
 .size-16{font-size: 16px;}
+.size-18{font-size: 18px;}
 .color-blue{ color: #007aff;}
 .color-yellow{ color: #f0ad4e;}
 .color-orange{color: #f9975c}
 .color-qing{color: #49d9b2}
+.color-grey{ color: #888888;}
 .bg-white{background-color: #fff;}
 a.mui-action-back{color: #fff;}
+a.blue{ color:#007aff;}
 .text-right{text-align: right;}
 .iconfont{ font-size: 24px; margin-right: 3px;}
 .text-left{ text-align: left;}
 .text-right{ text-align: right;}
+.text-center{ text-align: center;}
 .mui-segmented-control .mui-control-item.mui-active {
 color: #fff;
 background-color: #1faa2b;
@@ -36,6 +42,10 @@ background-color: #1faa2b;
 .mui-segmented-control {
 border: 1px solid #1faa2b;
 border-radius: 3px;
+}
+.mui-col-sm-1, .mui-col-sm-10, .mui-col-sm-11, .mui-col-sm-12, .mui-col-sm-2, .mui-col-sm-3, .mui-col-sm-4, .mui-col-sm-5, .mui-col-sm-6, .mui-col-sm-7, .mui-col-sm-8, .mui-col-sm-9, .mui-col-xs-1, .mui-col-xs-10,
+.mui-col-xs-11, .mui-col-xs-12, .mui-col-xs-2, .mui-col-xs-3, .mui-col-xs-4, .mui-col-xs-5, .mui-col-xs-6, .mui-col-xs-7, .mui-col-xs-8, .mui-col-xs-9 {
+ padding: 0 2px 0 4px;
 }
 /******中心***/
 .call-notice{ color: #f77a66; height: 40px; line-height: 40px; background-color: #FFFFFF; margin-bottom: 14px;;}
@@ -121,3 +131,17 @@ border: 1px solid rgba(0,0,0,.2);
 .call-list .moredel-info span{ margin-left: 6px;}
 .call-list .mui-card{ margin-bottom: 12px;}
 .call-mng .call-title{ height: 40px; margin-top: 12px; overflow: hidden; color: #999;}
+
+/******填写处方界面*******/
+.create-bills-title{ background-color: transparent;}
+.create-bills-title .mui-table-view-cell:after {background-color: transparent;}
+.create-bills-title:before {background-color: transparent;}
+.create-bills-title:after {background-color: transparent;}
+.create-bills-title .mui-table-view-cell {padding: 8px 15px;}
+.create-bills-title a.blue{ color:#007aff;}
+.create-bills-card .mui-row{ padding: 8px 0; margin-bottom: 5px; border-bottom: 1px solid #EEEEEE;}
+.create-bills-card .mui-row:last-child{ border-bottom: none;}
+.create-bills-card .mui-row .mui-col-xs-2{ text-align: right; padding-right: 4px; vertical-align: middle;}
+.select-td{border: 1px solid #ddd; border-radius: 4px; position: relative; background: #FFFFFF;}
+.select-style{padding: 3px; margin-bottom: 0px; background: transparent;}
+.select-arrow{position: absolute; top: 4px; right: 2px; font-size: inherit; color: #cecece;line-height: 1;}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link href="../../css/iconfont.css" rel="stylesheet"/>
+    <link href="../../css/style.css" rel="stylesheet"/>   
+</head>
+<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">对话结束</h1>
+			<span class="mui-badge mui-badge-primary mui-pull-right margin-top10 padding-8" id="callList_add">关闭</span>
+		</header>
+		<div class="mui-content">
+		 	<div style="margin: 0 15px 18px 15px;">尊敬的张医生医生，您的咨询已结束，点击一下链接可为患者建议最新病例！</div>
+
+			<ul class="mui-table-view create-bills-title">
+				<li class="mui-table-view-cell mui-collapse">
+					<a href="javascript:void(0);" class="blue">创建新诊断随访单</a>
+					<div class="mui-collapse-content" style="background: transparent; padding: 0;">
+						<div class="mui-card create-bills-card paddingTB-8">
+							<div class="mui-row">
+								<div class="mui-col-xs-2">诊断</div>
+        						<div class="mui-col-xs-10"><input type="text" class="mui-input-clear" placeholder="" style="width: 55%;"></div>
+							</div>
+							<div class="mui-row">
+								<div class="mui-col-xs-2">病情描述</div>
+        						<div class="mui-col-xs-9">
+        							<textarea id="textarea" rows="5" placeholder=""></textarea>
+        						</div>
+        						<div class="mui-col-xs-1"></div>
+							</div>
+							<div class="mui-row">
+								<div class="mui-col-xs-2">建议下次检查项目</div>
+        						<div class="mui-col-xs-8 select-td">
+									<span class="select-arrow"><i class="mui-icon mui-icon-arrowdown"></i></span>
+									<select class="mui-btn mui-btn-block select-style">
+										<option value="item-1">item-1</option>
+										<option value="item-2">item-2</option>
+										<option value="item-3">item-3</option>
+										<option value="item-4">item-4</option>
+										<option value="item-5">item-5</option>
+									</select>
+								</div>
+        						<div class="mui-col-xs-2"></div>
+							</div>
+							<div class="mui-row">
+								<div class="mui-col-xs-2">随访方案</div>
+        						<div class="mui-col-xs-8 select-td">
+									<span class="select-arrow"><i class="mui-icon mui-icon-arrowdown"></i></span>
+									<select class="mui-btn mui-btn-block select-style">
+										<option value="item-1">item-1</option>
+										<option value="item-2">item-2</option>
+										<option value="item-3">item-3</option>
+										<option value="item-4">item-4</option>
+										<option value="item-5">item-5</option>
+									</select>
+								</div>
+        						<div class="mui-col-xs-2"></div>
+							</div>
+							<div class="mui-row">
+								<div class="mui-col-xs-2">下次随访时间</div>
+        						<div class="mui-col-xs-10"><input type="date" class="mui-input-clear" placeholder="" style="width: 55%;"></div>
+							</div>
+							<div class="mui-row" align="center">
+								<div class="mui-col-xs-12"><button type="button" class="mui-btn mui-btn-primary mui-btn-block" style="width: 70%;">确定添加</button></div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell mui-collapse" >
+					<a  href="javascript:void(0);" class="blue">创建新用药建议单</a>
+					<div class="mui-collapse-content"  style="background: transparent; padding: 0;">
+						<div class="mui-card create-bills-card paddingTB-8">
+							<div class="mui-row">
+								<div class="mui-col-xs-2" style="text-align: left;"><i class="mui-icon iconfont icon-studyuser color-blue"></i><strong class="size-18">张珊</strong> </div>
+								<div class="mui-col-xs-10">男&nbsp;&nbsp;44岁</div>
+							</div>
+							<div class="mui-row">
+								<div class="mui-col-xs-2" style="text-align: left;"><i class="mui-icon iconfont icon-studyuser" style="visibility: hidden;"></i>过敏史 </div>
+        						<div class="mui-col-xs-8">青霉素、氯霉素</div>
+        						<div class="mui-col-xs-2"><span class="mui-badge mui-badge-primary  padding-8">添加</span></div>
+							</div>
+							<div class="mui-row">
+								<div class="mui-col-xs-2" style="text-align: left;"><i class="mui-icon iconfont icon-studyuser" style="visibility: hidden;"></i>诊断 </div>
+        						<div class="mui-col-xs-8 select-td">
+									<span class="select-arrow"><i class="mui-icon mui-icon-arrowdown"></i></span>
+									<select class="mui-btn mui-btn-block select-style">
+										<option value="item-1">item-1</option>
+										<option value="item-2">item-2</option>
+										<option value="item-3">item-3</option>
+										<option value="item-4">item-4</option>
+										<option value="item-5">item-5</option>
+									</select>
+								</div>
+								<div class="mui-col-xs-2"></div>
+							</div>
+							<div class="mui-row">
+								<div class="mui-col-xs-4" style="text-align: left;"><i class="mui-icon iconfont icon-medicine color-blue"></i>建议药品 </div>
+        						<div class="mui-col-xs-6"></div>
+        						<div class="mui-col-xs-2"><span class="mui-badge mui-badge-primary padding-8">添加</span></div>
+							</div>
+							<div class="mui-card" style=" background-color: #f8f8f8; margin-top: 8px;">
+								<div class="mui-row">
+									<div class="mui-col-xs-6">药品名：<em class="color-grey">录播定</em></div>
+									<div class="mui-col-xs-6">通用名：<em class="color-grey">是大法官</em></div>
+								</div>
+								<div class="mui-row">
+									<div class="mui-col-xs-6">规&nbsp;&nbsp;格：<em class="color-grey">7mg*6</em></div>
+									<div class="mui-col-xs-6">数&nbsp;&nbsp;量：<input type="text" style="width: 55px; height: 25px;">盒</div>
+								</div>
+								<div class="mui-row">
+									<div class="mui-col-xs-2">用法用量：</div>
+									<div class="mui-col-xs-2 select-td">
+										<span class="select-arrow"><i class="mui-icon mui-icon-arrowdown"></i></span>
+										<select class="mui-btn mui-btn-block select-style">
+											<option value="item-1">item-1</option>
+											<option value="item-2">item-2</option>
+											<option value="item-3">item-3</option>
+											<option value="item-4">item-4</option>
+											<option value="item-5">item-5</option>
+										</select>
+									</div>
+									<div class="mui-col-xs-4 text-center">一天<input type="text" style="width: 55px; height: 25px;">次</div>
+									<div class="mui-col-xs-4 text-center">一次<input type="text" style="width: 55px; height: 25px;">粒</div>
+								</div>
+								<div class="mui-row">
+									<div class="mui-col-xs-2">备注：</div>
+									<div class="mui-col-xs-10">
+										<textarea rows="5" placeholder="" style="width: 90%;"></textarea>
+									</div>
+								</div>
+								<div class="mui-row">
+									<div class="mui-col-xs-11 text-right color-grey"><i class="mui-icon iconfont icon-cut"></i>删除</div>
+									<div class="mui-col-xs-1 text-right"></div>
+								</div>
+								<div class="mui-row">
+									<div class="mui-col-xs-6" align="center"><button type="button" class="mui-btn mui-btn-primary mui-btn-block" style="width: 80%;">保存</button></div>
+									<div class="mui-col-xs-6" align="center"><button type="button" class="mui-btn mui-btn-success mui-btn-block" style="width: 80%;">套用上次方案</button></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+
+		</div>
+	<script src="../../js/mui.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</body>
+</html>

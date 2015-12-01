@@ -1,5 +1,5 @@
 页面名称                                                                         效果图名称
 --------------------------------------------------------------------
-consultIndex/index.html                     接诊中心5.jpg
-consultOnline/fillForm.html                 填写处方界面.jpg
+consultIndex/index.html                     接诊中心5.jpg              2015-11-30  
+consultOnline/fillForm.html                 填写处方界面.jpg           2015-12-01
 consultOnline/onlineDiagnose.html           在线咨询内容页-诊断.jpg

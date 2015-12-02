@@ -146,8 +146,7 @@ border: 1px solid rgba(0,0,0,.2);
 .select-style{padding: 3px; margin-bottom: 0px; background: transparent;}
 .select-arrow{position: absolute; top: 4px; right: 2px; font-size: inherit; color: #cecece;line-height: 1;}
 /***中心首页****/
-.call-tab-box {
-background-color: #fff;
+.call-tab-box {background-color: #fff;
 margin-bottom: 12px;
 padding-bottom: 12px;
 position: relative;

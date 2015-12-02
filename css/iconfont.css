@@ -23,9 +23,12 @@
 .icon-doctor:before { content: "\e60e"; }
 .icon-shizhong:before { content: "\e602"; }
 .icon-medicine:before { content: "\e60c"; }
+.icon-toastgou:before { content: "\e60f"; }
+.icon-toastcha:before { content: "\e610"; }
 .icon-rili:before { content: "\e603"; }
 .icon-cut:before { content: "\e604"; }
 .icon-list:before { content: "\e605"; }
 .icon-studyuser:before { content: "\e606"; }
 .icon-soundplus:before { content: "\e60b"; }
 .icon-kefu:before { content: "\e60a"; }
+

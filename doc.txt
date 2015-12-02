@@ -1,6 +1,0 @@
-页面名称                                                                         效果图名称
---------------------------------------------------------------------
-consultIndex/index.html                     接诊中心5.jpg
-consultOnline/fillForm.html                 填写处方界面.jpg
-consultOnline/onlineDiagnose.html           在线咨询内容页-诊断.jpg
-consultIndex/tab-webview-subpage-callcenter 咨询中心首页   2015-12-2

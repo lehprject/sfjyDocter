@@ -10,9 +10,19 @@
 	    <link href="../../css/iconfont.css" rel="stylesheet"/>
 	    <link href="../../css/style.css" rel="stylesheet"/>
 		<style>
-			.mui-card .mui-control-content {
-				padding: 10px;
-			}
+		.mui-bar~.mui-content .mui-fullscreen{top:8px;height:auto}
+		.mui-pull-top-tips{position:absolute;top:-20px;left:50%;margin-left:-25px;width:40px;height:40px;border-radius:100%}
+		.mui-bar~.mui-pull-top-tips{top:24px}
+		.mui-pull-top-wrapper{width:42px;height:42px;display:block;text-align:center;background-color:#efeff4;border:1px solid #ddd;border-radius:25px;background-clip:padding-box;box-shadow:0 4px 10px #bbb;overflow:hidden}
+		.mui-pull-top-tips.mui-transitioning{-webkit-transition-duration:200ms;transition-duration:200ms}
+		.mui-pull-top-tips .mui-pull-loading{margin:0}
+		.mui-pull-top-wrapper .mui-icon,.mui-pull-top-wrapper .mui-spinner{margin-top:7px}
+		.mui-pull-bottom-tips{text-align:center;background-color:#efeff4;font-size:15px;line-height:40px;color:#777}
+		.mui-pull-top-canvas{overflow:hidden;background-color:#fafafa;border-radius:40px;box-shadow:0 4px 10px #bbb;width:40px;height:40px;margin:0 auto}
+		.mui-pull-top-canvas canvas{width:40px}
+		.mui-slider-indicator.mui-segmented-control{background-color:#efeff4}
+		.mui-scroll .mui-card{margin-bottom:12px}
+		.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{color:#FFF;background-color:#1faa2b}
 		</style>
 	</head>
 	<body>
@@ -20,114 +30,118 @@
 			<div class="call-notice">
 				<span><i class="mui-icon iconfont icon-soundplus color-orange"></i><strong>评价   </strong>| </span><span>感谢张一山</span>
 			</div>
-			<div class="itab-box">
-				<div class="itab-box-title">
-					<div id="segmentedControl" class="mui-segmented-control">
-						<a class="mui-control-item mui-active" href="#item1">实时咨询</a>
-						<a class="mui-control-item" href="#item2">非实时咨询</a>
-					 </div>
-				</div>
-				<div class="index-tab">
-					<div id="item1" class="mui-control-content mui-active">
-						<div class="mui-card">
-							<ul class="mui-table-view">
-								<li class="mui-table-view-cell mui-media">
-									<a class="mui-navigate-right" id="c_001">
-										<div class="mui-row margin-bottom4">
-											<div class="mui-col-xs-4"><i class="mui-icon iconfont icon-studyuser color-blue"></i>小东</div>
-        									<div class="mui-col-xs-8"><i class="mui-icon iconfont icon-shizhong color-orange"></i>2015-05-12<span class="mui-badge mui-badge-primary my-badge">第1位</span></div>
-											<div class="mui-col-xs-12"><i class="mui-icon iconfont icon-yuyin color-yellow"></i>语音文字</div>
-										</div>
-									</a>
-								</li>
-								<div class="exreport">
-									<span class="mui-badge mui-badge-primary padding-8" >诊前报告</span>
-								</div>
-							</ul>	
-						</div>
-						<div class="mui-card">
-							<ul class="mui-table-view">
-								<li class="mui-table-view-cell mui-media">
-									<a class="mui-navigate-right"  id="c_002">
-										<div class="mui-row margin-bottom4">
-											<div class="mui-col-xs-4"><i class="mui-icon iconfont icon-studyuser color-blue"></i>小东</div>
-        									<div class="mui-col-xs-8"><i class="mui-icon iconfont icon-shizhong color-orange"></i>2015-05-12<span class="mui-badge mui-badge-primary my-badge">第1位</span></div>
-											<div class="mui-col-xs-12"><i class="mui-icon iconfont icon-kefu color-qing"></i>网络电话</div>
-										</div>
-									</a>
-								</li>
-								<div class="exreport">
-									<span class="mui-badge mui-badge-primary padding-8" >诊前报告</span>
-								</div>
-							</ul>	
-						</div>
-						<div class="mui-card">
-							<ul class="mui-table-view">
-								<li class="mui-table-view-cell mui-media">
-									<a class="mui-navigate-right"  id="c_003">
-										<div class="mui-row margin-bottom4">
-											<div class="mui-col-xs-4"><i class="mui-icon iconfont icon-studyuser color-blue"></i>小东</div>
-        									<div class="mui-col-xs-8"><i class="mui-icon iconfont icon-shizhong color-orange"></i>2015-05-12<span class="mui-badge mui-badge-primary my-badge">第1位</span></div>
-											<div class="mui-col-xs-12"><i class="mui-icon iconfont icon-medicine color-qing"></i>用药建议</div>
-										</div>
-									</a>
-								</li>
-								<div class="exreport">
-									<span class="mui-badge mui-badge-primary padding-8" >诊前报告</span>
-								</div>
-							</ul>	
-						</div>
-
+			<div class="call-tab-box">
+				
+				<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="padding: 8px 15%; background: #FFFFFF; height: 60px; border-bottom: 1px solid #EEEEEE;">
+					<div class="mui-scroll mui-segmented-control" style="width: 100%; display: inline-block;">
+						<a class="mui-control-item mui-active" href="#item1mobile">实时咨询</a>
+						<a class="mui-control-item" href="#item2mobile">非实时咨询</a>
 					</div>
-					<div id="item2" class="mui-control-content">
-						<div class="mui-card">
-							<ul class="mui-table-view">
-								<li class="mui-table-view-cell mui-media">
-									<a class="mui-navigate-right" id="c_100">
-										<div class="mui-row border-box">
-									        <div class="mui-col-xs-6"><i class="mui-icon iconfont icon-studyuser color-blue"></i>刘明</div>
-									        <div class="mui-col-xs-6"><i class="mui-icon iconfont icon-shizhong color-orange"></i>2015-05-12</div>
-									    </div>
-									    <div class="exreport">
-											张医生你好，阿斯顿发过来看见是大法官
-										</div>
-									</a>
-								</li>
-							</ul>	
+				</div>
+				<div class="mui-slider-group" style="top: 70px;">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div  class="mui-control-content mui-table-view1 mui-active">
+									<div class="mui-card">
+										<ul class="mui-table-view">
+											<li class="mui-table-view-cell mui-media">
+												<a class="mui-navigate-right" id="c_001">
+													<div class="mui-row margin-bottom4">
+														<div class="mui-col-xs-4"><i class="mui-icon iconfont icon-studyuser color-blue"></i>小东</div>
+			        									<div class="mui-col-xs-8"><i class="mui-icon iconfont icon-shizhong color-orange"></i>2015-05-12<span class="mui-badge mui-badge-primary my-badge">第1位</span></div>
+														<div class="mui-col-xs-12"><i class="mui-icon iconfont icon-yuyin color-yellow"></i>语音文字</div>
+													</div>
+												</a>
+											</li>
+											<div class="exreport">
+												<span class="mui-badge mui-badge-primary padding-8" >诊前报告</span>
+											</div>
+										</ul>	
+									</div>
+									<div class="mui-card">
+										<ul class="mui-table-view">
+											<li class="mui-table-view-cell mui-media">
+												<a class="mui-navigate-right"  id="c_002">
+													<div class="mui-row margin-bottom4">
+														<div class="mui-col-xs-4"><i class="mui-icon iconfont icon-studyuser color-blue"></i>小东</div>
+			        									<div class="mui-col-xs-8"><i class="mui-icon iconfont icon-shizhong color-orange"></i>2015-05-12<span class="mui-badge mui-badge-primary my-badge">第1位</span></div>
+														<div class="mui-col-xs-12"><i class="mui-icon iconfont icon-kefu color-qing"></i>网络电话</div>
+													</div>
+												</a>
+											</li>
+											<div class="exreport">
+												<span class="mui-badge mui-badge-primary padding-8" >诊前报告</span>
+											</div>
+										</ul>	
+									</div>
+									<div class="mui-card">
+										<ul class="mui-table-view">
+											<li class="mui-table-view-cell mui-media">
+												<a class="mui-navigate-right"  id="c_003">
+													<div class="mui-row margin-bottom4">
+														<div class="mui-col-xs-4"><i class="mui-icon iconfont icon-studyuser color-blue"></i>小东</div>
+			        									<div class="mui-col-xs-8"><i class="mui-icon iconfont icon-shizhong color-orange"></i>2015-05-12<span class="mui-badge mui-badge-primary my-badge">第1位</span></div>
+														<div class="mui-col-xs-12"><i class="mui-icon iconfont icon-medicine color-qing"></i>用药建议</div>
+													</div>
+												</a>
+											</li>
+											<div class="exreport">
+												<span class="mui-badge mui-badge-primary padding-8" >诊前报告</span>
+											</div>
+										</ul>	
+									</div>
+			
+								</div>
+							</div>
 						</div>
-						<div class="mui-card">
-							<ul class="mui-table-view">
-								<li class="mui-table-view-cell mui-media">
-									<a class="mui-navigate-right" id="c_101">
-										<div class="mui-row border-box">
-									        <div class="mui-col-xs-6"><i class="mui-icon iconfont icon-studyuser color-blue"></i>刘明</div>
-									        <div class="mui-col-xs-6"><i class="mui-icon iconfont icon-shizhong color-orange"></i>2015-05-12</div>
-									    </div>
-									    <div class="exreport">
-											张医生你好，阿斯顿发过来看见是大法官
-										</div>
-									</a>
-								</li>
-							</ul>	
-						</div>
-						<div class="mui-card">
-							<ul class="mui-table-view">
-								<li class="mui-table-view-cell mui-media">
-									<a class="mui-navigate-right" id="c_102">
-										<div class="mui-row border-box">
-									        <div class="mui-col-xs-6"><i class="mui-icon iconfont icon-studyuser color-blue"></i>刘明</div>
-									        <div class="mui-col-xs-6"><i class="mui-icon iconfont icon-shizhong color-orange"></i>2015-05-12</div>
-									    </div>
-									    <div class="exreport">
-											张医生你好，阿斯顿发过来看见是大法官
-										</div>
-									</a>
-								</li>
-							</ul>	
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div  id="scroll2"  class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-control-content mui-table-view1 mui-active">
+									<div class="mui-card">
+										<ul class="mui-table-view">
+											<li class="mui-table-view-cell mui-media">
+												<a class="mui-navigate-right" id="c_100">
+													<div class="mui-row border-box">
+												        <div class="mui-col-xs-6"><i class="mui-icon iconfont icon-studyuser color-blue"></i>刘明</div>
+												        <div class="mui-col-xs-6"><i class="mui-icon iconfont icon-shizhong color-orange"></i>2015-05-12</div>
+												    </div>
+												    <div class="exreport">
+														张医生你好，阿斯顿发过来看见是大法官
+													</div>
+												</a>
+											</li>
+										</ul>	
+									</div>
+									<div class="mui-card">
+										<ul class="mui-table-view">
+											<li class="mui-table-view-cell mui-media">
+												<a class="mui-navigate-right" id="c_100">
+													<div class="mui-row border-box">
+												        <div class="mui-col-xs-6"><i class="mui-icon iconfont icon-studyuser color-blue"></i>刘明</div>
+												        <div class="mui-col-xs-6"><i class="mui-icon iconfont icon-shizhong color-orange"></i>2015-05-12</div>
+												    </div>
+												    <div class="exreport">
+														张医生你好，阿斯顿发过来看见是大法官
+													</div>
+												</a>
+											</li>
+										</ul>	
+									</div>
+								</div>
+
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+				
+				
+			</div>
+			
 			<ul class="mui-table-view mui-grid-view mui-grid-9" style="background: #FFFFFF; border: none;">
 		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
 		                    <span class="call-sprite call-sprite-1"></span>
@@ -169,6 +183,8 @@
 			</ul>-->
 		</div>
 		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/mui.pullToRefresh.js"></script>
+		<script src="../../js/mui.pullToRefresh.material.js"></script>
 		<script>
 			mui.init({
 				preloadPages:[{
@@ -177,31 +193,215 @@
 				  }
 				]
 			});
-
 			mui.plusReady(function(){
-	      		var patientinfoPage = null;
-				//添加列表项的点击事件
-				mui('.index-tab').on('tap', '.mui-card li>a', function(e) {
+					var patientinfoPage = null;
+					mui('.mui-scroll').on('tap', '.mui-card li>a', function(e) {
+						var id = this.getAttribute('id');
+					 //console.log(id);
+					  //获得详情页面
+					  if(!patientinfoPage){
+					    patientinfoPage = plus.webview.getWebviewById('patient.html');
+					  }
+					  //触发详情页面的patientinfoId事件
+					  mui.fire(patientinfoPage,'patientinfoId',{
+					    id:id
+					  });
+					//打开详情页面          
+					  mui.openWindow({
+					    id:'patient.html'
+					  });
+					})
+				}
+			);
+			(function($) {
+				//阻尼系数
+				var deceleration = mui.os.ios?0.003:0.0009;
+				
+				//非实时咨询
+				var offLineFragment=function(name,date,mark,paid){
 
-				  var id = this.getAttribute('id');
-				 // alert(id)
-				 //console.log(id);
-				  //获得详情页面
-				  if(!patientinfoPage){
-				    patientinfoPage = plus.webview.getWebviewById('patient.html');
-				  }
-				  //触发详情页面的patientinfoId事件
-				  mui.fire(patientinfoPage,'patientinfoId',{
-				    id:id
-				  });
-				//打开详情页面          
-				  mui.openWindow({
-				    id:'patient.html'
-				  });
-				  
+						var fragment = document.createDocumentFragment();
+						var nameI=document.createElement('i');
+						nameI.className="mui-icon iconfont icon-studyuser color-blue";
+						var nameDiv=document.createElement('div');
+						nameDiv.className="mui-col-xs-6";
+						nameDiv.appendChild(nameI);
+						var nameTxtNode=document.createTextNode(name);
+						nameDiv.appendChild(nameTxtNode);
+						
+						var dateI=document.createElement('i');
+						dateI.className="mui-icon iconfont icon-shizhong color-orange";
+						var dateDiv=document.createElement('div');
+						dateDiv.className="mui-col-xs-6";
+						dateDiv.appendChild(dateI);
+						var dateTxtNode=document.createTextNode(date);
+						dateDiv.appendChild(dateTxtNode);
+						
+						var nameDate=document.createElement('div');
+						nameDate.className="mui-row border-box";
+						nameDate.appendChild(nameDiv);
+						nameDate.appendChild(dateDiv);
+						
+						var markDiv=document.createElement('div');
+						markDiv.className="exreport";
+						markDiv.innerHTML=mark;
+						
+						var patientA=document.createElement('a');
+						patientA.className="mui-navigate-right";
+						patientA.id=paid;
+						
+						patientA.appendChild(nameDate);
+						patientA.appendChild(markDiv);
+						
+						
+						var paLi=document.createElement('li');
+						paLi.className="mui-table-view-cell mui-media";
+						paLi.appendChild(patientA);
+						
+						var paUl=document.createElement("ul");
+						paUl.className="mui-table-view";
+						paUl.appendChild(paLi);
+						
+						var paPDiv=document.createElement('div');
+						paPDiv.className="mui-card";
+						paPDiv.appendChild(paUl);
+						fragment.appendChild(paPDiv);
+			
+						return fragment;
+						
+					}
+				//实时咨询
+				var onLineFragment=function(name,date,num,yuy,paid){
+					
+					var fragment = document.createDocumentFragment();
+					var nameI=document.createElement('i');
+					nameI.className="mui-icon iconfont icon-studyuser color-blue";
+					var nameDiv=document.createElement('div');
+					nameDiv.className="mui-col-xs-4";
+					nameDiv.appendChild(nameI);
+					var nameTxtNode=document.createTextNode(name);
+					nameDiv.appendChild(nameTxtNode);
+					
+					var dateI=document.createElement('i');
+					dateI.className="mui-icon iconfont icon-shizhong color-orange";
+					var bardSpan=document.createElement('span');
+					bardSpan.className="mui-badge mui-badge-primary my-badge";
+					bardSpan.innerHTML=num;
+					var dateDiv=document.createElement('div');
+					dateDiv.className="mui-col-xs-8";
+					dateDiv.appendChild(dateI);
+					var dateTxtNode=document.createTextNode(date);
+					dateDiv.appendChild(dateTxtNode);
+					
+					dateDiv.appendChild(bardSpan);
+					
+					
+					var yuyI=document.createElement('i');
+					yuyI.className="mui-icon iconfont icon-yuyin color-yellow";
+					var yuyDiv=document.createElement('div');
+					yuyDiv.className="mui-col-xs-12";
+					yuyDiv.appendChild(yuyI);
+					var yuyTxtNode=document.createTextNode(yuy);
+					yuyDiv.appendChild(yuyTxtNode);
+					
+					var rowDiv=document.createElement('div');
+					rowDiv.className="mui-row margin-bottom4";
+					rowDiv.appendChild(nameDiv);
+					rowDiv.appendChild(dateDiv);
+					rowDiv.appendChild(yuyDiv);
+
+					var patientA=document.createElement('a');
+					patientA.className="mui-navigate-right";
+					patientA.id=paid;
+					patientA.appendChild(rowDiv);
+					
+					var callSpan=document.createElement("span");
+					callSpan.className="mui-badge mui-badge-primary padding-8";
+					callSpan.innerHTML="诊前报告";
+					var callDiv=document.createElement('div');
+					callDiv.className="exreport";
+					callDiv.appendChild(callSpan);
+
+					var paLi=document.createElement('li');
+					paLi.className="mui-table-view-cell mui-media";
+					paLi.appendChild(patientA);
+					
+					var paUl=document.createElement("ul");
+					paUl.className="mui-table-view";
+					paUl.appendChild(paLi);
+					paUl.appendChild(callDiv);
+					
+					var paPDiv=document.createElement('div');
+					paPDiv.className="mui-card";
+					paPDiv.appendChild(paUl);
+					fragment.appendChild(paPDiv);
+		
+					return fragment;
+					
+				}
+					
+				$('.mui-scroll-wrapper').scroll({
+					bounce: false,
+					indicators: true, //是否显示滚动条
+					deceleration:deceleration
 				});
-	      	});
-
+				$.ready(function() {
+					//循环初始化所有下拉刷新，上拉加载。
+					$.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function(index, pullRefreshEl) {
+						
+					});
+					
+					$('#scroll1 .mui-scroll').pullToRefresh({
+							down: {
+								callback: function() {
+									var self = this;
+									setTimeout(function() {
+										var ul = self.element.querySelector('.mui-table-view1');
+										ul.insertBefore(onLineFragment("ajax名字","2015-12-25","第一位","语音文字", "x_001"), ul.firstChild);
+										self.endPullDownToRefresh();
+									}, 1000);
+								}
+							},
+							up: {
+								callback: function() {
+									var self = this;
+									setTimeout(function() {
+										var ul = self.element.querySelector('.mui-table-view1');
+										ul.appendChild(onLineFragment("ajax名字la","2015-12-25","第一位","语音文字", "x_001"));
+										self.endPullUpToRefresh();
+									}, 1000);
+								}
+							}
+						});
+						
+						$('#scroll2 .mui-scroll').pullToRefresh({
+							down: {
+								callback: function() {
+									var self = this;
+								 
+									setTimeout(function() {
+										var ul = self.element.querySelector('.mui-table-view1');
+										ul.insertBefore(offLineFragment("ajax名字la","2015-12-25","这是患者的说明", "x_001"), ul.firstChild);
+										self.endPullDownToRefresh();
+									}, 1000);
+								}
+							},
+							up: {
+								callback: function() {
+									var self = this;
+								 
+									setTimeout(function() {
+										var ul = self.element.querySelector('.mui-table-view1');
+										ul.appendChild(offLineFragment("ajax名字la","2015-12-25","这是患者的说明", "x_001"));
+										self.endPullUpToRefresh();
+									}, 1000);
+								}
+							}
+						});
+					
+				});
+			})(mui);
+			
 			mui('body').on('shown', '.mui-popover', function(e) {
 				//console.log('shown', e.detail.id);//detail为当前popover元素
 			});
@@ -230,4 +430,3 @@
 		</script>
 	</body>
 </html>
-	
